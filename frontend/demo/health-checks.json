@@ -1,0 +1,32 @@
+{
+  "items": [
+    {
+      "kind": "health-checks",
+      "id": "demo-site",
+      "version": 1,
+      "updated_at": "2026-01-15T11:00:00Z",
+      "data": {
+        "enabled": true,
+        "cooldown_seconds": 1800,
+        "notify_recovery": true,
+        "maintenance_until": null,
+        "notification_channel_ids": [
+          "demo-channel"
+        ],
+        "name": "Example API (configuration only)",
+        "url": "https://example.com/health",
+        "method": "GET",
+        "interval_seconds": 60,
+        "timeout_seconds": 5,
+        "failure_count": 3,
+        "recovery_count": 2,
+        "expected_status_codes": [
+          200
+        ]
+      },
+      "delivery": {
+        "status": "SIMULATED"
+      }
+    }
+  ]
+}

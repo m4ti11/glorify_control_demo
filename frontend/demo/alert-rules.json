@@ -1,0 +1,88 @@
+{
+  "items": [
+    {
+      "kind": "alert-rules",
+      "id": "demo-cpu_percent",
+      "version": 1,
+      "updated_at": "2026-01-15T11:00:00Z",
+      "data": {
+        "enabled": true,
+        "cooldown_seconds": 1800,
+        "notify_recovery": true,
+        "maintenance_until": null,
+        "notification_channel_ids": [
+          "demo-channel"
+        ],
+        "name": "Sustained CPU load",
+        "system_id": "demo-vps-01",
+        "resource_type": "host",
+        "resource_id": "host",
+        "metric": "cpu_percent",
+        "operator": ">=",
+        "threshold": 80,
+        "recovery_threshold": 65,
+        "duration_seconds": 180,
+        "consecutive_samples": 3
+      },
+      "delivery": {
+        "status": "SIMULATED"
+      }
+    },
+    {
+      "kind": "alert-rules",
+      "id": "demo-memory_percent",
+      "version": 1,
+      "updated_at": "2026-01-15T11:00:00Z",
+      "data": {
+        "enabled": true,
+        "cooldown_seconds": 1800,
+        "notify_recovery": true,
+        "maintenance_until": null,
+        "notification_channel_ids": [
+          "demo-channel"
+        ],
+        "name": "Memory pressure",
+        "system_id": "demo-vps-01",
+        "resource_type": "host",
+        "resource_id": "host",
+        "metric": "memory_percent",
+        "operator": ">=",
+        "threshold": 85,
+        "recovery_threshold": 75,
+        "duration_seconds": 180,
+        "consecutive_samples": 3
+      },
+      "delivery": {
+        "status": "SIMULATED"
+      }
+    },
+    {
+      "kind": "alert-rules",
+      "id": "demo-disk_percent",
+      "version": 1,
+      "updated_at": "2026-01-15T11:00:00Z",
+      "data": {
+        "enabled": true,
+        "cooldown_seconds": 1800,
+        "notify_recovery": true,
+        "maintenance_until": null,
+        "notification_channel_ids": [
+          "demo-channel"
+        ],
+        "name": "Disk usage",
+        "system_id": "demo-vps-01",
+        "resource_type": "host",
+        "resource_id": "host",
+        "metric": "disk_percent",
+        "operator": ">=",
+        "threshold": 90,
+        "recovery_threshold": 80,
+        "duration_seconds": 180,
+        "consecutive_samples": 3
+      },
+      "delivery": {
+        "status": "SIMULATED"
+      }
+    }
+  ]
+}

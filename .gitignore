@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+node_modules/
+.terraform/
+*.tfstate*
+*.tfplan
+terraform.tfvars
+.env
+.env.*
+!.env.example
+build/
+output/
+*.log

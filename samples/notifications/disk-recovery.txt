@@ -1,0 +1,4 @@
+SIMULATED NOTIFICATION - no message was sent
+To: admin@example.com
+System: demo-vps-01
+Disk usage recovered from 91% to 68.5%.

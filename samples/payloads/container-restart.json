@@ -1,0 +1,17 @@
+{
+  "record_type": "event",
+  "schema_version": 1,
+  "event_id": "f9d63734-fef0-5c4c-844c-8ab6194239ed",
+  "system_id": "demo-vps-01",
+  "event_type": "container.exited",
+  "source": "docker",
+  "occurred_at": "2026-10-17T20:15:32.123Z",
+  "subject": {
+    "type": "container",
+    "id": "worker"
+  },
+  "details": {
+    "exit_code": 137,
+    "oom_killed": true
+  }
+}

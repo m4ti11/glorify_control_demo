@@ -1,0 +1,118 @@
+{
+  "record_type": "event",
+  "schema_version": 1,
+  "event_id": "51a5c11e-1bb1-59c6-8036-883ec3e2ea2c",
+  "system_id": "demo-vps-01",
+  "event_type": "postgres.daily_metrics",
+  "source": "postgres",
+  "occurred_at": "2026-01-15T10:00:00Z",
+  "subject": {
+    "type": "system",
+    "id": "demo-vps-01"
+  },
+  "details": {
+    "scope": "system",
+    "database": "all",
+    "available": true,
+    "report_date": "2026-10-22",
+    "timezone": "America/Argentina/Buenos_Aires",
+    "captured_at": "2026-01-15T10:00:00Z",
+    "reports": [
+      {
+        "scope": "database",
+        "database": "orders",
+        "available": true,
+        "pg_stat_statements": {
+          "available": true,
+          "rows": [
+            {
+              "queryid": "101",
+              "query": "SELECT id, total FROM orders WHERE customer_id = $1 ORDER BY created_at DESC LIMIT $2",
+              "calls": 1280,
+              "rows": 14200,
+              "total_exec_ms": 57600,
+              "mean_exec_ms": 45,
+              "collected_at": "2026-10-23T03:00:00+00:00",
+              "stats_reset": "2026-10-01T00:00:00+00:00",
+              "min_exec_ms": 1.0,
+              "max_exec_ms": 90.0,
+              "stddev_exec_ms": 8.0
+            },
+            {
+              "queryid": "102",
+              "query": "SELECT id, email FROM customers WHERE id = $1",
+              "calls": 4600,
+              "rows": 4600,
+              "total_exec_ms": 9200,
+              "mean_exec_ms": 2
+            },
+            {
+              "queryid": "103",
+              "query": "SELECT count(*) FROM orders WHERE status = $1",
+              "calls": 320,
+              "rows": 320,
+              "total_exec_ms": 12480,
+              "mean_exec_ms": 39
+            }
+          ]
+        },
+        "database_stats": {
+          "available": true,
+          "rows": [
+            {
+              "datname": "orders",
+              "xact_commit": 9400,
+              "xact_rollback": 2,
+              "blks_hit": 83200
+            }
+          ]
+        },
+        "tables": {
+          "available": true,
+          "rows": [
+            {
+              "relname": "orders",
+              "n_live_tup": 18000,
+              "n_dead_tup": 240
+            },
+            {
+              "relname": "customers",
+              "n_live_tup": 3800,
+              "n_dead_tup": 12
+            }
+          ]
+        }
+      },
+      {
+        "scope": "cluster",
+        "database": "cluster",
+        "available": true,
+        "connections": {
+          "available": true,
+          "rows": [
+            {
+              "database": "orders",
+              "connections": 18,
+              "active": 6,
+              "idle": 11
+            },
+            {
+              "database": "customers",
+              "connections": 7,
+              "active": 2,
+              "idle": 5
+            }
+          ]
+        },
+        "locks": {
+          "available": true,
+          "rows": []
+        },
+        "blocked": {
+          "available": true,
+          "rows": []
+        }
+      }
+    ]
+  }
+}

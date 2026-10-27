@@ -1,0 +1,19 @@
+# "prod" is the requested folder label; this showcase has never been deployed.
+aws_region                  = "us-east-1"
+project_name                = "glorify-control-demo"
+environment                 = "prod"
+ops_alert_email             = "admin@example.com"
+report_system_ids           = ["demo-vps-01"]
+openai_model                = "REPLACE_WITH_APPROVED_MODEL_ID"
+ingest_metrics_package_path = "../../../build/ingest_metrics.zip"
+website_health_check_enabled  = false
+website_health_check_hostname = "example.com"
+dashboard_callback_urls     = ["http://localhost:8080/"]
+dashboard_logout_urls       = ["http://localhost:8080/"]
+dashboard_allowed_origins   = ["http://localhost:8080"]
+report_email_enabled        = false
+report_email_sender         = ""
+event_email_sender          = ""
+event_email_identity_address = ""
+event_email_recipient_identities = []
+dashboard_custom_domain_enabled = false

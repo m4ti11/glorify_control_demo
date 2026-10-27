@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "system_id": "demo-vps-01",
+  "report_date": "2026-01-14",
+  "timezone": "America/Argentina/Buenos_Aires",
+  "generated_at": "2026-01-15T10:30:00Z",
+  "source_status": {
+    "host_metrics": {
+      "status": "available",
+      "count": 720,
+      "coverage": {
+        "percentage": 100,
+        "present_intervals": 720,
+        "expected_intervals": 720,
+        "expected_interval_seconds": 120,
+        "largest_gap_seconds": 120,
+        "sufficient": true
+      }
+    },
+    "events": {
+      "status": "available",
+      "count": 17
+    },
+    "postgresql": {
+      "status": "available",
+      "count": 1
+    }
+  },
+  "analysis": {
+    "summary": "Fictional sample: a short CPU peak coincided with background work. Disk usage reached 91% and returned to 68.5% after cleanup. The worker restarted once after an OOM exit. This text is authored for the demo; no model was called.",
+    "findings": [
+      {
+        "severity": "high",
+        "title": "Disk threshold crossed and recovered",
+        "description": "Usage exceeded the 90% threshold. Later samples were below the 80% recovery threshold.",
+        "evidence_refs": [
+          "host:disk",
+          "event:disk-recovery"
+        ]
+      },
+      {
+        "severity": "medium",
+        "title": "Worker restarted once",
+        "description": "The fictional worker exited with code 137 and then restarted.",
+        "evidence_refs": [
+          "event:worker-exit"
+        ]
+      }
+    ],
+    "recommendations": [
+      {
+        "priority": "medium",
+        "action": "Review the orders query plan before adding an index",
+        "description": "Compare representative plans and cardinalities; cumulative query timings do not prove a daily regression.",
+        "evidence_refs": [
+          "postgres:101"
+        ]
+      }
+    ]
+  }
+}

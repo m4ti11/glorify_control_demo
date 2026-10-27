@@ -1,0 +1,139 @@
+{
+  "system_id": "demo-vps-01",
+  "measured_at": "2026-01-15T11:59:48Z",
+  "received_at": "2026-01-15T11:59:51Z",
+  "resources": [
+    {
+      "resource_type": "HOST",
+      "resource_id": "host",
+      "metrics": {
+        "hostname": "demo-vps-01",
+        "uptime_seconds": 1287600,
+        "cpu_percent": 31.5,
+        "memory": {
+          "total_mb": 8192,
+          "used_mb": 4587.5,
+          "percent": 56.0
+        },
+        "disk": {
+          "path": "/",
+          "total_gb": 160.0,
+          "used_gb": 109.6,
+          "percent": 68.5
+        },
+        "extended": {
+          "cpu": {
+            "method": "cumulative_counters",
+            "window_seconds": 120
+          }
+        }
+      }
+    },
+    {
+      "resource_type": "CONTAINER",
+      "resource_id": "api",
+      "metrics": {
+        "name": "api",
+        "image": "api:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 9.2,
+        "memory_usage_mb": 610,
+        "memory_limit_mb": 2048,
+        "memory_percent": 29.8
+      }
+    },
+    {
+      "resource_type": "CONTAINER",
+      "resource_id": "web",
+      "metrics": {
+        "name": "web",
+        "image": "web:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 2.1,
+        "memory_usage_mb": 180,
+        "memory_limit_mb": 2048,
+        "memory_percent": 8.8
+      }
+    },
+    {
+      "resource_type": "CONTAINER",
+      "resource_id": "worker",
+      "metrics": {
+        "name": "worker",
+        "image": "worker:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-15T10:00:00Z",
+        "restart_count": 1,
+        "cpu_percent": 13.2,
+        "memory_usage_mb": 780,
+        "memory_limit_mb": 2048,
+        "memory_percent": 38.1
+      }
+    },
+    {
+      "resource_type": "CONTAINER",
+      "resource_id": "postgres",
+      "metrics": {
+        "name": "postgres",
+        "image": "postgres:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 6.0,
+        "memory_usage_mb": 1240,
+        "memory_limit_mb": 2048,
+        "memory_percent": 60.5
+      }
+    },
+    {
+      "resource_type": "CONTAINER",
+      "resource_id": "redis",
+      "metrics": {
+        "name": "redis",
+        "image": "redis:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 1.2,
+        "memory_usage_mb": 96,
+        "memory_limit_mb": 2048,
+        "memory_percent": 4.7
+      }
+    },
+    {
+      "resource_type": "POSTGRES",
+      "resource_id": "postgres",
+      "metrics": {
+        "samples": [
+          {
+            "timestamp": "2026-01-15T11:59:40Z",
+            "available": true,
+            "connections": [
+              {
+                "database": "orders",
+                "connections": 18,
+                "active": 6,
+                "idle": 11
+              },
+              {
+                "database": "customers",
+                "connections": 7,
+                "active": 2,
+                "idle": 5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

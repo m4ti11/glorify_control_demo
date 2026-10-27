@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "system_id": "demo-vps-01",
+  "agent_version": "0.1.1",
+  "timestamp": "2026-01-15T11:59:48Z",
+  "host": {
+    "hostname": "demo-vps-01",
+    "uptime_seconds": 1287600,
+    "cpu_percent": 31.5,
+    "memory": {
+      "total_mb": 8192,
+      "used_mb": 4587.5,
+      "percent": 56.0
+    },
+    "disk": {
+      "path": "/",
+      "total_gb": 160.0,
+      "used_gb": 109.6,
+      "percent": 68.5
+    },
+    "extended": {
+      "cpu": {
+        "method": "cumulative_counters",
+        "window_seconds": 120
+      }
+    }
+  },
+  "docker": {
+    "available": true,
+    "running_containers": 5,
+    "total_containers": 5,
+    "containers": [
+      {
+        "name": "api",
+        "image": "api:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 9.2,
+        "memory_usage_mb": 610,
+        "memory_limit_mb": 2048,
+        "memory_percent": 29.8
+      },
+      {
+        "name": "web",
+        "image": "web:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 2.1,
+        "memory_usage_mb": 180,
+        "memory_limit_mb": 2048,
+        "memory_percent": 8.8
+      },
+      {
+        "name": "worker",
+        "image": "worker:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-15T10:00:00Z",
+        "restart_count": 1,
+        "cpu_percent": 13.2,
+        "memory_usage_mb": 780,
+        "memory_limit_mb": 2048,
+        "memory_percent": 38.1
+      },
+      {
+        "name": "postgres",
+        "image": "postgres:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 6.0,
+        "memory_usage_mb": 1240,
+        "memory_limit_mb": 2048,
+        "memory_percent": 60.5
+      },
+      {
+        "name": "redis",
+        "image": "redis:demo",
+        "state": "running",
+        "health": "healthy",
+        "started_at": "2026-01-14T12:00:00Z",
+        "restart_count": 0,
+        "cpu_percent": 1.2,
+        "memory_usage_mb": 96,
+        "memory_limit_mb": 2048,
+        "memory_percent": 4.7
+      }
+    ]
+  },
+  "postgres": {
+    "samples": [
+      {
+        "timestamp": "2026-01-15T11:58:40Z",
+        "available": true,
+        "connections": [
+          {
+            "database": "orders",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "customers",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "postgres",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "template0",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "template1",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": null,
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          }
+        ]
+      },
+      {
+        "timestamp": "2026-01-15T11:59:40Z",
+        "available": true,
+        "connections": [
+          {
+            "database": "orders",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "customers",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "postgres",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "template0",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": "template1",
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          },
+          {
+            "database": null,
+            "connections": 6,
+            "active": 1,
+            "idle": 4
+          }
+        ]
+      }
+    ]
+  }
+}

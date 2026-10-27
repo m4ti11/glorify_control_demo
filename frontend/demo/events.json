@@ -1,0 +1,370 @@
+{
+  "items": [
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "aa1ab621-0c93-5ae6-9d4a-b76bfe10a7c3",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T10:38:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PENDING",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "f09dcd39-42f9-5746-9ae9-0aac8aa0c76a",
+      "system_id": "demo-vps-01",
+      "event_type": "container.started",
+      "source": "docker",
+      "occurred_at": "2026-01-15T10:00:00Z",
+      "subject": {
+        "type": "container",
+        "id": "worker"
+      },
+      "details": {
+        "restart_count": 1
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "f9d63734-fef0-5c4c-844c-8ab6194239ed",
+      "system_id": "demo-vps-01",
+      "event_type": "container.exited",
+      "source": "docker",
+      "occurred_at": "2026-01-15T09:59:00Z",
+      "subject": {
+        "type": "container",
+        "id": "worker"
+      },
+      "details": {
+        "exit_code": 137,
+        "oom_killed": true
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "642d85df-27ce-5714-8b7f-1563cd4686bd",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T09:16:40Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "5780ed42-8398-593c-a056-64147c898c89",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T07:55:00Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "c9fb905f-84bd-56c1-bb7a-f3ebc8142a8b",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T06:33:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "b4e73c38-1bef-56d9-b764-119da269e6d6",
+      "system_id": "demo-vps-01",
+      "event_type": "host.alert.recovered",
+      "source": "agent",
+      "occurred_at": "2026-01-15T05:53:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "metric": "disk_percent",
+        "value": 68.5,
+        "threshold": 90,
+        "recovery_threshold": 80
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "37d3b52f-eb50-57ef-89ef-9e4d581509e9",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T05:11:40Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "b7bbfd46-1e48-5ed0-9b0e-9322ef6c2b59",
+      "system_id": "demo-vps-01",
+      "event_type": "host.alert.triggered",
+      "source": "agent",
+      "occurred_at": "2026-01-15T04:13:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "metric": "disk_percent",
+        "value": 91,
+        "threshold": 90
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "9224f227-50a7-5aaa-aaa7-c9aae4d1232c",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T03:50:00Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "3204fbfb-5b78-56c3-ae56-0b35474c4648",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T02:28:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "44fb6a7e-dff6-580a-90b9-41e06063becf",
+      "system_id": "demo-vps-01",
+      "event_type": "host.alert.recovered",
+      "source": "agent",
+      "occurred_at": "2026-01-15T01:26:40Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "metric": "cpu_percent",
+        "value": 31
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "04348482-d7c5-55d0-863c-09c82195a82c",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-15T01:06:40Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "ac5eec71-262c-5a25-8627-08882d11a3ef",
+      "system_id": "demo-vps-01",
+      "event_type": "host.alert.triggered",
+      "source": "agent",
+      "occurred_at": "2026-01-15T00:53:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "metric": "cpu_percent",
+        "value": 92
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "5243c4c2-1f74-5169-ab43-c365fe9b5ccd",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-14T23:45:00Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "1cab7ab5-6803-5e60-bcf4-149d0166eb4e",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-14T22:23:20Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    },
+    {
+      "record_type": "event",
+      "schema_version": 1,
+      "event_id": "80a1a8dc-55ef-58cc-86a2-dbd5a5e68fff",
+      "system_id": "demo-vps-01",
+      "event_type": "agent.heartbeat",
+      "source": "agent",
+      "occurred_at": "2026-01-14T21:01:40Z",
+      "subject": {
+        "type": "host",
+        "id": "host"
+      },
+      "details": {
+        "status": "observed"
+      },
+      "notification": {
+        "status": "PUBLISHED",
+        "email_status": "SIMULATED",
+        "email_recipient": "admin@example.com"
+      }
+    }
+  ],
+  "next_cursor": null
+}
